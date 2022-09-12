@@ -1,0 +1,92 @@
+/* El cuadro donde se encontrara nuestra caja de autocompletar*/
+.autocomplete-jquery-aBox{
+    margin: 0px 10px 15px 0px;
+    position: relative;
+}
+/* la etiqueta de autocompletar titulo y box*/
+.autocomplete-jquery-aBox label{
+    margin-right: 0px;
+    margin-top: 0px;
+    display: block;
+}
+/* El input, tiene un tamaño de 250 , pero se podria cambiar y deberia 
+*  el script darse cuenta de esto cambiando tambien el tamaño del box de
+*  sugerencias. 
+*/
+.autocomplete-jquery-aBox input{
+  display: block;
+  width: 104%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+/*
+ * Resultados
+ */
+.autocomplete-jquery-results{
+    border:1px solid silver;
+    float:right;
+    margin-top:2px;
+   # margin-top:30px; /*fix for IE7*/
+    position:absolute;
+    display: none;
+    z-index: 999;
+}
+
+/* Si ubica el mouse sobre el imput toma este estilo*/
+.autocomplete-jquery-aBox input:focus{
+  display: block;
+  width: 104%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+}
+
+/*Esta clase se activa cuando el usuario se mueve por las sugerencias*/
+.autocomplete-jquery-mark{
+    color:black;
+    background-color: #E0F0FF !important;
+}
+
+/* Cada sugerencia va a llevar esta clase, por lo tanto tomara el estilo siguiente */
+.autocomplete-jquery-item{
+    border-bottom: 1px solid lightgray;
+    display: block;
+    height: 34px;
+    padding-top: 5px;
+    text-decoration: none;     
+    padding-left: 3px;  
+    background-color: white;
+}
+.autocomplete-jquery-results{
+     box-shadow: 1px 1px 3px black;
+}
+/* Al pasar por ensima de las sugerencias*/
+.autocomplete-jquery-item:hover{
+    background-color: #E0F0FF;
+    color:black;
+}
